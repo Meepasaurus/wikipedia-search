@@ -1,0 +1,171 @@
+$body-gray: #222;
+$container-gray: #333;
+$loader-gray: #ccc;
+$link-blue: #5bc0de;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: $body-gray;
+}
+
+.hr-result {
+  margin: 50px 0 -20px 0;
+  color: $body-gray;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.wiki-sans-serif {
+  font-family: Helvetica Neue, Helvetica, Arimo, Liberation Sans, Lucida Grande, sans-serif;
+  color: white;
+}
+
+a.wiki-serif {
+  font-family: Times, Georgia, Linux Libertine, Cambria, serif;
+  color: white;
+  text-decoration: none;
+  color: $link-blue;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+a.wiki-serif:hover {
+  border-color: $link-blue;
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 60px 0;
+}
+
+.logo {
+  height: 150px;
+  margin: 30px auto;
+  display: block;
+}
+
+.search-container {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar {
+  margin: 0 20px;
+}
+
+.form-control {
+  color: black;
+  font-weight: bold;
+  border-radius: 0 50px 50px 0;
+}
+
+.ui-autocomplete {
+  border-radius: 0 0 10px 10px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.ui-menu-item {
+  padding: 0 12px;
+}
+
+.ui-menu-item:last-of-type {
+  border-radius: 0 0 10px 10px;
+}
+
+.random-container {
+  width: 100%;
+  margin: 20px auto 40px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.random-container a:hover {
+  text-decoration: none;
+}
+
+#btn-random {
+  display: inline-block;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#btn-search {
+  border-radius: 0 50px 50px 0;
+}
+
+.btn-info {
+  border-radius: 0px;
+}
+
+.alert-danger {
+  margin: 0 auto;
+  max-width: 200px;
+  text-align: center;
+  display: none;
+}
+
+#search-results {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 768px;
+  background-color: $container-gray;
+  color: white;
+  overflow: auto;
+}
+
+.result {
+  padding: 20px 30px;
+}
+
+.result-thumbnail-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.result-thumbnail {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+}
+
+.result-thumbnail {
+  margin-bottom: 20px;
+}
+
+.more-container {
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  padding: 30px;
+}
+
+.fa-cog {
+  
+}
+
+#loading-new, #loading-more {
+  width: 100px;
+  margin: 0 auto;
+  color: $loader-gray;
+  text-align: center;
+  display: none;
+}
+
+#btn-more {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  display: none;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic"/>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css"/>
+	<link rel="stylesheet" href="index.css"/>
+	<title>Wikipedia Viewer (accurate search)</title>
+</head>
+<body>
+	<div class="wrapper">
+		<img class="logo" src="images/wikipedia-logo-v2.png"/>
+	  
+	  <div class="search-container">
+	    <div class="input-group searchbar">
+	      <input id="txt-search" type="text" class="form-control" placeholder="Search Wikipedia for...">
+	      <span class="input-group-btn">
+	        <button id="btn-search" class="btn btn-primary" type="button"><span class="fa fa-search" aria-hidden="true"></span></button>
+	      </span>
+	    </div>  
+	  </div>
+	  
+	  <div class="random-container">
+	    <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Special:Random">
+	      <div id="btn-random" class="btn btn-info">
+	        Random <span class="fa fa-random" aria-hidden="true"></span>
+	      </div>
+	    </a>
+	  </div>
+	  
+	  <div id="no-results" class="alert alert-danger" role="alert">
+	    <span class="fa fa-warning" aria-hidden="true"></span>
+	    <span class="sr-only">Notice:</span>No results found.
+	  </div>
+	  
+	  <section id="results-container">
+	    <div id="search-results">
+	    </div>
+	    
+	    <div class="more-container">
+	      <div id="loading-more"><i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+	        <span class="sr-only">Loading...</span>
+	      </div>
+	      <div id="btn-more" class="btn btn-primary">More Results</div>
+	    </div>
+	  </section>
+	  
+	  <div id="loading-new"><i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+	  	<span class="sr-only">Loading...</span>
+	  </div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
