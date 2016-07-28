@@ -14,5 +14,3 @@ Unminified CodePen version: http://codepen.io/Meepasaurus/full/bZaGgy/
 
 Fast Search CodePen version (less accurate results): http://codepen.io/Meepasaurus/full/qNVjkV/
 -----------------------------------------------------------------------------------------------
-
--needs to be refactored
